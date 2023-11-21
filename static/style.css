@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.main_1 {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.head1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.style_but2 {
+    background-color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.style_but2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.style_but2:hover {
+    background-color: #003d80;
+}
+
+/* Left section styles */
+.main_3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.main_3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Right section styles */
+.second_main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.para {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.style_but {
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.style_but:hover {
+    background-color: #0056b3;
+}
+
+/* Predictions section styles */
+.predictions {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Footer styles */
+/* Add any styles you want for the footer here */

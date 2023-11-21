@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 30%;
+  padding: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  background-color: #000;
+  padding: 20px;
+  color: white;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(33, 33, 35);
+  border-radius: 4px;
+}
+
+input[type=text]:hover {
+  background-color: white;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Make the submit button same width as input values */
+}
+
+input[type=submit]:hover {
+  background-color: rgb(57, 190, 207);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>STOCK KEEPING UNITS</h1>
+  <p>(SKU) pronounced "skew", short for stock keeping unit, is used by retailers to identify and track inventory. A SKU is a unique code consisting of letters and numbers that identify characteristics about each product, such as manufacturer,</p>
+</div>
+
+<form method="POST" action="{{ url_for('predict') }}">
+  <label for="units"><strong>SKU Units: </strong></label><br><br>
+  <label for="fname">Enter a Value:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Enter a Value:</label><br>
+  <input type="text" id="lname" name="lname" required><br>
+  <label for="value3">Enter a Value:</label><br>
+  <input type="text" id="value3" name="value3" required><br>
+  <label for="value4">Enter a Value:</label><br>
+  <input type="text" id="value4" name="value4" required><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

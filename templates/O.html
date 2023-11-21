@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c0c0c0; /* Set background color to ash */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        .main_1 {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .head1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .style_but2 {
+            background-color: #0056b3;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .style_but2 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .style_but2:hover {
+            background-color: #003d80;
+        }
+
+        /* Left section styles */
+        .main_3 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .main_3 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .left-input-container {
+            width: 30%;
+        }
+
+        /* Right section styles */
+        .second_main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .para {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .wide-input {
+            width: 70%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .style_but {
+            background-color: #007BFF;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .style_but:hover {
+            background-color: #0056b3;
+        }
+
+        /* Predictions section styles */
+        .predictions {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Set the background color of container1 to ash and move it slightly to the right */
+        .container1 {
+            background-color: #c0c0c0;
+            margin: 0 100px; /* Move container1 slightly to the right */
+            max-width: 600px; /* Set a maximum width for the container */
+            padding: 50px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="main_1">
+                    <div>
+                        <h4 class="m-2 head1">Stock Estmating</h4>
+                    </div>
+                    <div class="m-2">
+                        <button class="style_but2 mr-3"><a href="index.html">HOME</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="main_2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main_3">
+                    <p class="para">Enter the values between 0 to 2500</p>
+                    <form method="POST" action="{{ url_for('predict') }}">
+                        <div class="wide-input-container">
+                            <label>Enter the AQI value:</label>
+                            <input type="number" name="aqiInput" required class="wide-input">
+                        </div>
+                        <div class="wide-input-container">
+                            <label>Enter the second value:</label>
+                            <input type="number" name="secondInput" required class="wide-input">
+                        </div>
+                        <div class="wide-input-container">
+                            <label>Enter the third value:</label>
+                            <input type="number" name="thirdInput" required class="wide-input">
+                        </div>
+                        <div class="wide-input-container">
+                            <label>Enter the fourth value:</label>
+                            <input type="number" name="fourthInput" required class="wide-input">
+                        </div>
+                        <button class="style_but mt-3" type="submit">Predict</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
